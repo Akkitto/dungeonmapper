@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/ci.yml)
 [![Deploy to GitHub Pages](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/deploy.yml/badge.svg)](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/deploy.yml)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178C6?logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111827)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-offline_ready-5A0FC8)
@@ -91,7 +91,7 @@ npm test          # run the Vitest suite once
 npm run test:watch
 ```
 
-The project targets Node.js 20+ and npm 10+. CI runs install, lint, build, and tests on pushes and pull requests to `main`; the Pages workflow builds and deploys `dist` from `main`.
+The project targets Node.js 20+ and npm 10+. CI runs install, lint, build, and tests on pushes and pull requests to `master`; the Pages workflow builds and deploys `dist` from `master`.
 
 ## Format notes and caveats
 

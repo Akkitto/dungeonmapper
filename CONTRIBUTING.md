@@ -33,7 +33,7 @@ npm run build
 
 ## Pull requests
 
-1. Create a branch from `main`.
+1. Create a branch from `master`.
 2. Implement and validate your change.
 3. Fill out `PULL_REQUEST_TEMPLATE.md`.
 4. Link related issues and include screenshots/GIFs for UI changes.
