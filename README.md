@@ -104,6 +104,21 @@ The project targets Node.js 20+ and npm 10+. CI runs install, lint, build, and t
 
 Found a bug, built a cool improvement, or have a quality-of-life tweak that would make prep smoother? Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
 
-## License
+## Licence
 
-AGPL-3.0 © Alex Perrault
+Copyright © 2026 [Daniel Braniewski](https://brani.dev/)  
+Copyright © 2026 [Alex Perrault](https://github.com/evillollive)
+
+Modified from the original work on and after 2026/09/06.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+See [LICENSE](./LICENSE) for the full licence text.
