@@ -39,6 +39,7 @@ export function useMapPersistence(
     return () => {
       cancelled = true;
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loadMapData = useCallback((loaded: DungeonMap) => {
@@ -52,6 +53,7 @@ export function useMapPersistence(
     syncIdsToLevel(proj.levels[0]);
     setSelectedNoteId(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   const loadProjectData = useCallback((loaded: DungeonProject) => {
@@ -66,6 +68,7 @@ export function useMapPersistence(
     syncIdsToLevel(proj.levels[idx]);
     setSelectedNoteId(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   const newMap = useCallback(() => {
@@ -78,6 +81,7 @@ export function useMapPersistence(
     debouncedSave(fresh);
     resetIds();
     setSelectedNoteId(null);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   return { loadMapData, loadProjectData, newMap };

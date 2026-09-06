@@ -34,6 +34,7 @@ export function useLevelManagement(
       return prev;
     });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave, activeLevelIndex]);
 
   const addLevel = useCallback((name?: string) => {
@@ -52,6 +53,7 @@ export function useLevelManagement(
       return updated;
     });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   const renameLevel = useCallback((idx: number, name: string) => {
@@ -64,6 +66,7 @@ export function useLevelManagement(
       debouncedSave(updated);
       return updated;
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   const deleteLevel = useCallback((idx: number) => {
@@ -99,6 +102,7 @@ export function useLevelManagement(
       return updated;
     });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave, activeLevelIndex]);
 
   const duplicateLevel = useCallback((idx: number) => {
@@ -131,6 +135,7 @@ export function useLevelManagement(
       return updated;
     });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   const reorderLevels = useCallback((fromIdx: number, toIdx: number) => {
@@ -165,6 +170,7 @@ export function useLevelManagement(
       setActiveLevelIndex(newActive);
       return updated;
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave, activeLevelIndex]);
 
   const setProjectName = useCallback((name: string) => {
@@ -173,6 +179,7 @@ export function useLevelManagement(
       debouncedSave(updated);
       return updated;
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   const addStairLink = useCallback((link: StairLink) => {
@@ -184,6 +191,7 @@ export function useLevelManagement(
       debouncedSave(updated);
       return updated;
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   const removeStairLink = useCallback((fromLevel: number, fromX: number, fromY: number) => {
@@ -198,6 +206,7 @@ export function useLevelManagement(
       debouncedSave(updated);
       return updated;
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSave]);
 
   return {
