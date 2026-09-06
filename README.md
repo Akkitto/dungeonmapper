@@ -2,8 +2,8 @@
 
 **Make battle maps that look great fast, then keep polishing until they feel like your table.**
 
-[![CI](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/ci.yml)
-[![Deploy to GitHub Pages](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/deploy.yml/badge.svg)](https://github.com/evillollive/Dungeon-Mapper/actions/workflows/deploy.yml)
+[![CI](https://github.com/Akkitto/dungeonmapper/actions/workflows/ci.yml/badge.svg)](https://github.com/Akkitto/dungeonmapper/actions/workflows/ci.yml)
+[![Deploy to GitHub Pages](https://github.com/Akkitto/dungeonmapper/actions/workflows/deploy.yml/badge.svg)](https://github.com/Akkitto/dungeonmapper/actions/workflows/deploy.yml)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178C6?logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111827)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
@@ -12,7 +12,7 @@
 
 Dungeon Mapper is a retro-styled, client-only grid map editor for tabletop RPG prep and play. Paint tiles, generate rooms or terrain from a seed, add notes/stamps/tokens, switch into a player-safe Present view with fog of war, and export JSON, PNG, SVG, or print-ready images from the browser.
 
-**Try it now:** [evillollive.github.io/Dungeon-Mapper](https://evillollive.github.io/Dungeon-Mapper/)
+**Try it now:** [mapper.runyth.brani.dev](https://mapper.runyth.brani.dev/)
 
 ![Generate Hub demo](./docs/media/generate-hub.gif)
 
@@ -35,7 +35,7 @@ Dungeon Mapper is a retro-styled, client-only grid map editor for tabletop RPG p
 
 Use the hosted app if you just want to make a map:
 
-1. Open the [live demo](https://evillollive.github.io/Dungeon-Mapper/).
+1. Open the [live demo](https://mapper.runyth.brani.dev/).
 2. Press `G` to open **Generate Hub**, pick a generator or sample, and create a starting map.
 3. Toggle **Present** to test fog, tokens, light, and player-safe exports.
 4. Export JSON when you want an editable backup; export PNG/SVG/print images when you want to share or print.

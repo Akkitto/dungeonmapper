@@ -42,7 +42,7 @@ Dungeon Mapper is easiest to share as a browser-first TTRPG map editor: fast eno
 
 **Description:** Browser-based TTRPG battle-map editor with procedural generation, fog of war, tokens, themes, exports, and offline PWA support.
 
-**Homepage:** `https://evillollive.github.io/Dungeon-Mapper/`
+**Homepage:** `https://mapper.runyth.brani.dev/`
 
 **Topics:** `ttrpg`, `battlemap`, `dungeon-mapper`, `map-editor`, `procedural-generation`, `react`, `typescript`, `vite`, `pwa`, `tabletop-rpg`
 
@@ -63,7 +63,7 @@ Dungeon Mapper is easiest to share as a browser-first TTRPG map editor: fast eno
 
 I built Dungeon Mapper, a browser-based TTRPG battle-map editor. It has seeded map generation, themes, fog of war, tokens, light/FOV, stamps, notes, JSON/PNG/SVG/print exports, and offline PWA support.
 
-Try it: https://evillollive.github.io/Dungeon-Mapper/
+Try it: https://mapper.runyth.brani.dev/
 
 ### Show HN-style draft
 
@@ -73,8 +73,8 @@ Dungeon Mapper is a React + TypeScript canvas app for making and running grid ba
 
 I built it as a local-first tool: it auto-saves in IndexedDB, has no account system, and can be installed as a PWA for offline use. The technical pieces I think are most interesting are the generator pipeline, editable room/river/path vectors, dynamic fog with token sight and light sources, and the export/rendering path.
 
-Live demo: https://evillollive.github.io/Dungeon-Mapper/
-Repo: https://github.com/evillollive/Dungeon-Mapper
+Live demo: https://mapper.runyth.brani.dev/
+Repo: https://github.com/Akkitto/dungeonmapper
 
 I would love feedback from both GMs and front-end/canvas developers.
 
