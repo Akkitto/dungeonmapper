@@ -17,18 +17,28 @@ export function useMapPersistence(
   setSelectedNoteId: React.Dispatch<React.SetStateAction<number | null>>,
 ) {
   useEffect(() => {
-    migrateFromLocalStorage().catch(() => {});
-    loadProjectFromStorage().then(loaded => {
-      if (loaded) {
-        const ready = withProjectDefaults(loaded);
-        if (ready.levels.length === 0) return;
-        setProject(ready);
-        const idx = Math.max(0, Math.min(ready.activeLevelIndex, ready.levels.length - 1));
-        setActiveLevelIndex(idx);
-        syncIdsToLevel(ready.levels[idx]);
-      }
-    }).catch(() => {});
+    let cancelled = false;
 
+    const restoreProject = async () => {
+      // A legacy localStorage save must be persisted before IndexedDB is
+      // read, otherwise the first post-upgrade load can race the migration
+      // and leave the freshly migrated project invisible until a reload.
+      await migrateFromLocalStorage();
+      const loaded = await loadProjectFromStorage();
+      if (!loaded || cancelled) return;
+
+      const ready = withProjectDefaults(loaded);
+      if (ready.levels.length === 0) return;
+      setProject(ready);
+      const idx = Math.max(0, Math.min(ready.activeLevelIndex, ready.levels.length - 1));
+      setActiveLevelIndex(idx);
+      syncIdsToLevel(ready.levels[idx]);
+    };
+
+    restoreProject().catch(() => {});
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const loadMapData = useCallback((loaded: DungeonMap) => {

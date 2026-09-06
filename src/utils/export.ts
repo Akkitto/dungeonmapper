@@ -42,7 +42,7 @@ export function importProjectJSON(file: File): Promise<DungeonProject> {
         } else if (
           typeof data === 'object' && data !== null &&
           typeof data.meta === 'object' && data.meta !== null &&
-          Array.isArray(data.cells)
+          Array.isArray(data.tiles)
         ) {
           // Legacy bare DungeonMap — wrap it.
           resolve(wrapMapAsProject(data as DungeonMap));
